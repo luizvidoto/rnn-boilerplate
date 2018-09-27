@@ -13,7 +13,8 @@
     "react-native": "0.56.0",
     "react-native-fs": "^2.11.17",
     "react-native-image-picker": "^0.26.10",
-    "react-native-navigation": "^2.0.2568"
+    "react-native-navigation": "^2.0.2568",
+    "react-native-vector-icons": "^5.0.0"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
