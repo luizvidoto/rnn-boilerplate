@@ -6,7 +6,8 @@
  * @flow
  */
 
-import React, { Component } from "react";
+import React from "react";
+import { Component } from "react";
 import { Platform, StyleSheet, Text, View, Button } from "react-native";
 import Icon from "react-native-vector-icons/FontAwesome";
 import Sound from "react-native-sound";
@@ -21,8 +22,8 @@ const instructions = Platform.select({
     "Shake or press menu button for dev menu"
 });
 
-function prepareSound(key) {
-  return new Sound(key, error => {
+function prepareSound(key: string) {
+  return new Sound(key, "", error => {
     if (error) {
       console.log("failed to load the sound", error);
       return;
@@ -66,7 +67,9 @@ export default class App extends Component<Props> {
     return (
       <View style={styles.container}>
         <Icon name="rocket" size={30} color="#900" />
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
+        <Text style={styles.welcome}>
+          Welcome to TYPESCRIPTED React Native!
+        </Text>
         <Text style={styles.instructions}>To get started, edit App.js</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         <Button title="Play Sine 1" onPress={() => this.playSound("sine1")} />

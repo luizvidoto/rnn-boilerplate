@@ -1,3 +1,7 @@
+type SoundSource = {
+  [key: string]: any;
+};
+
 const sounds = {
   kick: require("./assets/sounds/kick.mp3"),
   snare: require("./assets/sounds/snare.mp3"),
