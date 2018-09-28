@@ -17,6 +17,8 @@ import com.rnfs.RNFSPackage;
 
 import com.imagepicker.ImagePickerPackage;
 
+import com.zmxv.RNSound.RNSoundPackage;
+
 import java.util.Arrays;
 import java.util.List;
 
@@ -44,7 +46,8 @@ public class MainApplication extends NavigationApplication {
         // No need to add RnnPackage and MainReactPackage
         return Arrays.<ReactPackage>asList(
                 new RNFSPackage(),
-                new ImagePickerPackage()
+                new ImagePickerPackage(),
+                new RNSoundPackage()
         );
     }
 
